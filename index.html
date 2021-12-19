@@ -21,7 +21,7 @@
         </h1>
       </header>
       <main>
-        <section>
+        <section class="add">
           <h2>Ajouter un(e) Argonaute</h2>
           <form class="form" @submit="addArgonaute">
             <label for="name">Nom de l&apos;Argonaute</label>
@@ -33,7 +33,7 @@
         </section>
         <section>
           <h2>Membres de l'équipage</h2>
-          <ul>
+          <ul class="member-list">
             <Argonaute-item
               @update-argonaute="updateArgonaute"
               @delete-argonaute="deleteArgonaute"
